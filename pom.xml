@@ -21,7 +21,7 @@
   <groupId>ch.cern.eam</groupId>
   <artifactId>eam-wshub-proxyclient</artifactId>
   <packaging>jar</packaging>
-  <version>11.4-2</version>
+  <version>11.4.1-4</version>
 
   <name>EAM WS Hub Proxy Client</name>
   <description>JAX-WS aisws aisws generated from Infor EAM Web Services Toolkit WSDLs.</description>
@@ -32,8 +32,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-    <infor.version>11.4</infor.version>
-    <infor.wsdls>https://raw.githubusercontent.com/infor-cloud/infor-eam/master/Infor%20EAM%20APIs%20for%20On%20Premise/Version%20${infor.version}/wsdl</infor.wsdls>
+    <infor.version>11.4.1</infor.version>
+    <infor.wsdls>https://raw.githubusercontent.com/thecrowbar/infor-eam/master/Infor%20EAM%20APIs%20for%20Saas/Version%20${infor.version}/wsdl</infor.wsdls>
   </properties>
 
   <licenses>
@@ -214,7 +214,20 @@
                 <wsdlUrl>${infor.wsdls}/Asset/MP3026_SyncEquipLinearRef_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Asset/MP3057_AddEquipmentStructure_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Asset/MP3058_SyncEquipmentStructure_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3224_GetEquipmentConfigurationDefault_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3225_AddEquipmentConfiguration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3226_SyncEquipmentConfiguration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3227_DeleteEquipmentConfiguration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3228_GetEquipmentConfiguration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3229_CreateEquipmentConfigurationRevision_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3230_GetEquipmentGenerationDefault_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3231_AddEquipmentGeneration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3232_SyncEquipmentGeneration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3233_DeleteEquipmentGeneration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3234_GetEquipmentGeneration_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3235_CreateEquipmentGenerationPreview_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Asset/MP3238_GetWarrantyCoverage_001.wsdl</wsdlUrl>
+                <wsdlUrl>${infor.wsdls}/Asset/MP3251_GenerateEquipmentGeneration_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Asset/MP3291_ChangeEquipmentNumber_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Base/MP0108_GetComments_001.wsdl</wsdlUrl>
                 <wsdlUrl>${infor.wsdls}/Base/MP0109_AddComments_001.wsdl</wsdlUrl>
@@ -380,7 +393,20 @@
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3026_syncequiplinearref_001/SyncEquipLinearRefPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3057_addequipmentstructure_001/AddEquipmentStructurePT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3058_syncequipmentstructure_001/SyncEquipmentStructurePT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3224_getequipmentconfigurationdefault_001/GetEquipmentConfigurationDefaultPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3225_addequipmentconfiguration_001/AddEquipmentConfigurationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3226_syncequipmentconfiguration_001/SyncEquipmentConfigurationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3227_deleteequipmentconfiguration_001/DeleteEquipmentConfigurationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3228_getequipmentconfiguration_001/GetEquipmentConfigurationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3229_createequipmentconfigurationrevision_001/CreateEquipmentConfigurationRevisionPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3230_getequipmentgenerationdefault_001/GetEquipmentGenerationDefaultPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3231_addequipmentgeneration_001/AddEquipmentGenerationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3232_syncequipmentgeneration_001/SyncEquipmentGenerationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3233_deleteequipmentgeneration_001/DeleteEquipmentGenerationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3234_getequipmentgeneration_001/GetEquipmentGenerationPT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3235_createequipmentgenerationpreview_001/CreateEquipmentGenerationPreviewPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3238_getwarrantycoverage_001/GetWarrantyCoveragePT.java</sourceFile>
+                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3251_generateequipmentgeneration_001/GenerateEquipmentGenerationPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3291_changeequipmentnumber_001/ChangeEquipmentNumberPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp0108_getcomments_001/GetCommentsPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp0109_addcomments_001/AddCommentsPT.java</sourceFile>
