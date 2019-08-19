@@ -96,16 +96,6 @@
     <url>https://github.com/cern-eam/eam-wshub-proxyclient</url>
   </scm>
 
-  <distributionManagement>
-    <repository>
-      <id>maven-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <build>
 
