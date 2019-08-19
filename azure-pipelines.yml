@@ -10,6 +10,21 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: DownloadSecureFile@1
+  name: mavenSettings
+  displayName: 'Download secure file'
+  inputs:
+    secureFile: 'settings.xml'
+- task: CmdLine@2
+  inputs:
+    script: 'mkdir ~/.m2'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(mavenSettings.secureFilePath)'
+    Contents: '**'
+    TargetFolder: '~/.m2/settings.xml'
+    OverWrite: true
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
