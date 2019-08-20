@@ -18,6 +18,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'mkdir ~/.m2'
+- task: CmdLine@2
+  inputs:
+    script: 'echo $(mavenSettings.secureFilePath); pwd $(mavenSettins.secureFilePath)'
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(mavenSettings.secureFilePath)'
