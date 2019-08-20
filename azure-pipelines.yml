@@ -17,16 +17,24 @@ steps:
     secureFile: 'settings.xml'
 - task: CmdLine@2
   inputs:
-    script: 'mkdir ~/.m2'
+    script: 'mkdir /home/vsts/.m2'
 - task: CmdLine@2
   inputs:
-    script: 'echo $(mavenSettings.secureFilePath); pwd $(mavenSettins.secureFilePath)'
+    script: 'echo $(mavenSettings.secureFilePath); pwd $(mavenSettings.secureFilePath)'
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(mavenSettings.secureFilePath)'
     Contents: '**'
-    TargetFolder: '~/.m2/settings.xml'
+    TargetFolder: '/home/vsts/.m2/settings.xml'
     OverWrite: true
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      New-Item -Type Directory -Force "${HOME}/.m2"
+      Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 
 - task: Maven@3
   inputs:
