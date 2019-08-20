@@ -35,6 +35,7 @@ steps:
       
       New-Item -Type Directory -Force "${HOME}/.m2"
       Copy-Item -Force "$(mavenSettings.secureFilePath)" "${HOME}/.m2/settings.xml"
+      Get-ChildItem -Path "${HOME}/.m2"
 
 - task: Maven@3
   inputs:
