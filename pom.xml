@@ -428,8 +428,6 @@
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3238_getwarrantycoverage_001/GetWarrantyCoveragePT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3251_generateequipmentgeneration_001/GenerateEquipmentGenerationPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3291_changeequipmentnumber_001/ChangeEquipmentNumberPT.java</sourceFile>
-                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3251_generateequipmentgeneration_001/GenerateEquipmentGenerationPT.java</sourceFile>
-                <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp3228_getequipmentconfiguration_001/GetEquipmentConfigurationPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp0108_getcomments_001/GetCommentsPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp0109_addcomments_001/AddCommentsPT.java</sourceFile>
                 <sourceFile>${project.build.directory}/generated-sources/wsimport/net/datastream/wsdls/mp0110_synccomments_001/SyncCommentsPT.java</sourceFile>
